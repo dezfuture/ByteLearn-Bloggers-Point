@@ -1,1 +1,1 @@
-# Blog website url -> https://competent-allen-ed0bfa.netlify.app/
+# Blog website url -> https://determined-haibt-68352a.netlify.app/

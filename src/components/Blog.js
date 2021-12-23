@@ -7,11 +7,11 @@ const BlogDetails = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  } = useFetch("https://api-server-agrim.herokuapp.com/blogs/" + id);
   const history = useNavigate();
 
   const handleClick = () => {
-    fetch("http://localhost:8000/blogs/" + blog.id, {
+    fetch("https://api-server-agrim.herokuapp.com/blogs/" + blog.id, {
       method: "DELETE",
     }).then(() => {
       history("../", { replace: true });

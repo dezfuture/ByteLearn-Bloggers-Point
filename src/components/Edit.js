@@ -5,7 +5,9 @@ import useFetch from "./useFetch";
 const Create = () => {
   const [isPending, setIsPending] = useState(false);
   const { id } = useParams();
-  const { data: blog, error } = useFetch("http://localhost:8000/blogs/" + id);
+  const { data: blog, error } = useFetch(
+    "https://api-server-agrim.herokuapp.com/blogs" + id
+  );
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("");
@@ -22,7 +24,7 @@ const Create = () => {
 
     setIsPending(true);
 
-    await fetch(`http://localhost:8000/blogs/${id}`, {
+    await fetch(`https://api-server-agrim.herokuapp.com/blogs/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog),
