@@ -1,1 +1,1 @@
-# Blog website url -> https://www.youtube.com/watch?v=FLnxgSZ0DG4
+# Blog website url -> https://competent-allen-ed0bfa.netlify.app/
